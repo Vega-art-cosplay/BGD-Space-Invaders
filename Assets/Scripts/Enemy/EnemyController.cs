@@ -13,9 +13,9 @@ public class EnemyController : MonoBehaviour
 
     public float timeStep = 1f;
     public float countdown;
-	
-	// I added a switch to try both methods
-	public bool isUsingCountdown = true;
+
+    // I added a switch to try both methods
+    public bool isUsingCountdown = true;
 
     // Use this for initialization
     void Start()
@@ -29,6 +29,7 @@ public class EnemyController : MonoBehaviour
 			// Invoke repeating will be called once after timeStep (2nd parameter) amount,
 			// and then repeatedly every timeStep (3rd parameter) amount
 			//InvokeRepeating("Move", timeStep, timeStep);
+
 			InvokeRepeating("Move", timeStep, timeStep);
 		}
     }
@@ -43,9 +44,12 @@ public class EnemyController : MonoBehaviour
 			if (countdown <= 0)
 			{
 				Move();
-				countdown = timeStep;
+                countdown = timeStep;
 			}
 		}
+
+
+
     }
 
     void Move()
