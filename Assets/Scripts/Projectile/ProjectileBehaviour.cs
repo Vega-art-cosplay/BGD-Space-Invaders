@@ -10,8 +10,8 @@ public class ProjectileBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		// Another form of the Destroy function, which allows us to destroy an object
-		// after a delay in seconds. We set the delay with a variable "destroyAfter"
+        // Another form of the Destroy function, which allows us to destroy an object
+        // after a delay in seconds. We set the delay with a variable "destroyAfter"
         Destroy(gameObject, destroyDelay);
     }
 

@@ -6,14 +6,14 @@ public class Shooter : MonoBehaviour
 {
     // Reference to the original prefab to instatiate
     public GameObject projectilePrefab;
-    
-	// Reference to the AudioSource component on the player
-	public AudioSource sfxPlayer;
+
+    // Reference to the AudioSource component on the player
+    public AudioSource sfxPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,8 +26,8 @@ public class Shooter : MonoBehaviour
     }
 
     void Shoot()
-    {	
-		// We instantiate the prefab at the same position as the player,
+    {
+        // We instantiate the prefab at the same position as the player,
         // since this script is on the player GameObject
         Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         sfxPlayer.Play();
