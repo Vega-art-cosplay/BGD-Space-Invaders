@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,6 +15,10 @@ public class PlayerController : MonoBehaviour
 
     public float rightScreenEdge;
     public float leftScreenEdge;
+
+
+    public Sprite spriteShoot;
+    public Sprite spriteDefault;
 
 
     // Start is called before the first frame update
@@ -51,6 +57,10 @@ public class PlayerController : MonoBehaviour
 
             transform.position = Vector3.MoveTowards(currentPosition, newPosition, moveSpeed * Time.deltaTime);
         }
+
+
+        changePlayerSprite();
+
     }
 
     void SetupScreenBounds()
@@ -72,7 +82,22 @@ public class PlayerController : MonoBehaviour
         playerSpriteHalfWidth = playerSprite.bounds.size.x / 2f;
     }
 
-
+    void changePlayerSprite()
+    {
+        if (Input.GetButton("Jump"))
+        {
+            GetComponent<SpriteRenderer>().sprite = spriteShoot;
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            GetComponent<SpriteRenderer>().sprite = spriteDefault;
+        } 
+        if (Input.GetButtonDown("Jump"))
+        {
+            GetComponent<SpriteRenderer>().sprite = spriteShoot;
+            //try adding delay here
+        }
+    }
 
 
 
