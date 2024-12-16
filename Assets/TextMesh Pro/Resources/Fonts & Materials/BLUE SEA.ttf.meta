@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6b2c3d458a84a284eb53d0e014d92e3f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Blue Sea
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5d47e917ed7b3f045bd2ebc2edd6f954, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

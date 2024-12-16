@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Laser
   - Seagull
+  - AttackGull
   layers:
   - Default
   - TransparentFX
