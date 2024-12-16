@@ -27,10 +27,10 @@ public class EnemyBehaviour : MonoBehaviour
 
     public float countdownStart = 2f;
     public float countdownStop;
-    public float spriteChangeSpeed = 10f;
+    public float spriteChangeSpeed = 5f;
     bool isSpriteA = false;
 
-    public float rotateCountdownStart = 5f;
+    public float rotateCountdownStart = 2f;
     public float rotateCountdownStop;
     public float rotationAmount = 90f;
     bool isRotateRight = false;
